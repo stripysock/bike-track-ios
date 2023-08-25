@@ -14,6 +14,19 @@
 		A1A365112A9845A600C929C1 /* BikeTrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A365102A9845A600C929C1 /* BikeTrackTests.swift */; };
 		A1A3651B2A9845A600C929C1 /* BikeTrackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A3651A2A9845A600C929C1 /* BikeTrackUITests.swift */; };
 		A1A3651D2A9845A600C929C1 /* BikeTrackUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A3651C2A9845A600C929C1 /* BikeTrackUITestsLaunchTests.swift */; };
+		A1A3652E2A9847F800C929C1 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A3652D2A9847F800C929C1 /* UserService.swift */; };
+		A1A365302A98484100C929C1 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A3652F2A98484100C929C1 /* AppEnvironment.swift */; };
+		A1A365312A9848AC00C929C1 /* MockAuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A3652B2A98463C00C929C1 /* MockAuthRepository.swift */; };
+		A1A365322A9848AC00C929C1 /* AuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A3652C2A98463C00C929C1 /* AuthRepository.swift */; };
+		A1A365352A98495F00C929C1 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A365342A98495F00C929C1 /* Model.swift */; };
+		A1A365372A984DD200C929C1 /* AuthorisedContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A365362A984DD200C929C1 /* AuthorisedContentView.swift */; };
+		A1A365392A984E2100C929C1 /* ContentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A365382A984E2100C929C1 /* ContentService.swift */; };
+		A1A3653C2A984EDC00C929C1 /* ContentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A3653B2A984EDC00C929C1 /* ContentRepository.swift */; };
+		A1A3653E2A98520600C929C1 /* InMemoryContentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A3653D2A98520600C929C1 /* InMemoryContentRepository.swift */; };
+		A1A365402A98551B00C929C1 /* ContentService+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A3653F2A98551B00C929C1 /* ContentService+Preview.swift */; };
+		A1A365422A98554300C929C1 /* Model+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A365412A98554300C929C1 /* Model+Preview.swift */; };
+		A1A365442A985DAD00C929C1 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A365432A985DAD00C929C1 /* WelcomeView.swift */; };
+		A1A365462A9863F600C929C1 /* UserService+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A365452A9863F600C929C1 /* UserService+Preview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +58,19 @@
 		A1A365162A9845A600C929C1 /* BikeTrackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BikeTrackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1A3651A2A9845A600C929C1 /* BikeTrackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeTrackUITests.swift; sourceTree = "<group>"; };
 		A1A3651C2A9845A600C929C1 /* BikeTrackUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeTrackUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A1A3652B2A98463C00C929C1 /* MockAuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAuthRepository.swift; sourceTree = "<group>"; };
+		A1A3652C2A98463C00C929C1 /* AuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepository.swift; sourceTree = "<group>"; };
+		A1A3652D2A9847F800C929C1 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		A1A3652F2A98484100C929C1 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		A1A365342A98495F00C929C1 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		A1A365362A984DD200C929C1 /* AuthorisedContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorisedContentView.swift; sourceTree = "<group>"; };
+		A1A365382A984E2100C929C1 /* ContentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentService.swift; sourceTree = "<group>"; };
+		A1A3653B2A984EDC00C929C1 /* ContentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentRepository.swift; sourceTree = "<group>"; };
+		A1A3653D2A98520600C929C1 /* InMemoryContentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryContentRepository.swift; sourceTree = "<group>"; };
+		A1A3653F2A98551B00C929C1 /* ContentService+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentService+Preview.swift"; sourceTree = "<group>"; };
+		A1A365412A98554300C929C1 /* Model+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Model+Preview.swift"; sourceTree = "<group>"; };
+		A1A365432A985DAD00C929C1 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		A1A365452A9863F600C929C1 /* UserService+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserService+Preview.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,10 +122,16 @@
 			isa = PBXGroup;
 			children = (
 				A1A364FE2A9845A500C929C1 /* BikeTrackApp.swift */,
-				A1A365002A9845A500C929C1 /* ContentView.swift */,
+				A1A3652D2A9847F800C929C1 /* UserService.swift */,
+				A1A365382A984E2100C929C1 /* ContentService.swift */,
+				A1A365332A98495000C929C1 /* Model */,
+				A1A3652A2A9845F400C929C1 /* AuthRepository */,
+				A1A3653A2A984EB900C929C1 /* ContentRepository */,
+				A1A365292A9845B000C929C1 /* Views */,
 				A1A365022A9845A600C929C1 /* Assets.xcassets */,
 				A1A365042A9845A600C929C1 /* BikeTrack.entitlements */,
 				A1A365052A9845A600C929C1 /* Preview Content */,
+				A1A3652F2A98484100C929C1 /* AppEnvironment.swift */,
 			);
 			path = BikeTrack;
 			sourceTree = "<group>";
@@ -108,6 +140,9 @@
 			isa = PBXGroup;
 			children = (
 				A1A365062A9845A600C929C1 /* Preview Assets.xcassets */,
+				A1A365412A98554300C929C1 /* Model+Preview.swift */,
+				A1A3653F2A98551B00C929C1 /* ContentService+Preview.swift */,
+				A1A365452A9863F600C929C1 /* UserService+Preview.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -127,6 +162,42 @@
 				A1A3651C2A9845A600C929C1 /* BikeTrackUITestsLaunchTests.swift */,
 			);
 			path = BikeTrackUITests;
+			sourceTree = "<group>";
+		};
+		A1A365292A9845B000C929C1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A1A365002A9845A500C929C1 /* ContentView.swift */,
+				A1A365432A985DAD00C929C1 /* WelcomeView.swift */,
+				A1A365362A984DD200C929C1 /* AuthorisedContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A1A3652A2A9845F400C929C1 /* AuthRepository */ = {
+			isa = PBXGroup;
+			children = (
+				A1A3652C2A98463C00C929C1 /* AuthRepository.swift */,
+				A1A3652B2A98463C00C929C1 /* MockAuthRepository.swift */,
+			);
+			path = AuthRepository;
+			sourceTree = "<group>";
+		};
+		A1A365332A98495000C929C1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A1A365342A98495F00C929C1 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A1A3653A2A984EB900C929C1 /* ContentRepository */ = {
+			isa = PBXGroup;
+			children = (
+				A1A3653B2A984EDC00C929C1 /* ContentRepository.swift */,
+				A1A3653D2A98520600C929C1 /* InMemoryContentRepository.swift */,
+			);
+			path = ContentRepository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +330,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1A365352A98495F00C929C1 /* Model.swift in Sources */,
+				A1A3652E2A9847F800C929C1 /* UserService.swift in Sources */,
+				A1A365392A984E2100C929C1 /* ContentService.swift in Sources */,
+				A1A365302A98484100C929C1 /* AppEnvironment.swift in Sources */,
 				A1A365012A9845A500C929C1 /* ContentView.swift in Sources */,
+				A1A3653C2A984EDC00C929C1 /* ContentRepository.swift in Sources */,
+				A1A365372A984DD200C929C1 /* AuthorisedContentView.swift in Sources */,
+				A1A365462A9863F600C929C1 /* UserService+Preview.swift in Sources */,
+				A1A365322A9848AC00C929C1 /* AuthRepository.swift in Sources */,
+				A1A365402A98551B00C929C1 /* ContentService+Preview.swift in Sources */,
 				A1A364FF2A9845A500C929C1 /* BikeTrackApp.swift in Sources */,
+				A1A365422A98554300C929C1 /* Model+Preview.swift in Sources */,
+				A1A3653E2A98520600C929C1 /* InMemoryContentRepository.swift in Sources */,
+				A1A365312A9848AC00C929C1 /* MockAuthRepository.swift in Sources */,
+				A1A365442A985DAD00C929C1 /* WelcomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
