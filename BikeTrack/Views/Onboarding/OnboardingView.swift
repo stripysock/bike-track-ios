@@ -25,12 +25,12 @@ struct OnboardingView: View {
                 
             case .signIn:
                 SignInView {
-                    interfaceState = .welcome
+                    interfaceState = .signUp
                 }
                 
             case .signUp:
                 SignUpView {
-                    interfaceState = .welcome
+                    interfaceState = .signIn
                 }
             }
         }

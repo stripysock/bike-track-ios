@@ -74,7 +74,7 @@ struct SignUpView: View {
                     Button {
                         returnAction()
                     } label: {
-                        Text("Oh... I don't have an account. ")
+                        Text("I think I have an account. ")
                             .font(.body)
                     }
                     .disabled(!fieldsAreEnabled)
