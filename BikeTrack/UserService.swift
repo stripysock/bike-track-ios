@@ -38,6 +38,9 @@ class UserService: ObservableObject {
             
     }
     
+    /**
+     The logged in user's user profile.
+     */
     var currentUser: UserProfile? {
         switch authState {
         case .signedIn(let userProfile):
@@ -45,5 +48,18 @@ class UserService: ObservableObject {
         default:
             return nil
         }
+    }
+    
+    func signIn(emailAddress: String, password: String) async throws {
+        try await authRepository.signIn(emailAddress: emailAddress, password: password)
+    }
+    
+    func signUp(emailAddress: String, password: String) async throws {
+        try await authRepository.signUp(emailAddress: emailAddress, password: password)
+        try await signIn(emailAddress: emailAddress, password: password)
+    }
+    
+    func signOut() async throws {
+        try await authRepository.signOut()
     }
 }

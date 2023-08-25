@@ -13,7 +13,7 @@ struct ContentView: View {
                 AuthorisedContentView(userProfile: userProfile)
             
             case .signedOut:
-                WelcomeView()
+                OnboardingView()
             }
         }
         .animation(.easeInOut, value: userService.authState)

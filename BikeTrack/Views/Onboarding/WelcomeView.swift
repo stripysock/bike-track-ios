@@ -1,0 +1,44 @@
+import SwiftUI
+
+struct WelcomeView: View {
+    @Binding var interfaceState: OnboardingView.InterfaceState
+    
+    var body: some View {
+        VStack(spacing: 20) {
+            
+            Text("Like a family photo album for your **real** loved ones.")
+                .font(.body)
+                .fontDesign(.rounded)
+                .multilineTextAlignment(.center)
+            
+            Spacer()
+            
+            VStack {
+                Button {
+                    interfaceState = .signUp
+                } label: {
+                    Text("Create Account")
+                        .font(.headline)
+                        .fontDesign(.rounded)
+                        .frame(minWidth: 250)
+                }
+                .buttonStyle(.borderedProminent)
+                .buttonBorderShape(.capsule)
+                
+                Button {
+                    interfaceState = .signIn
+                } label: {
+                    Text("I already have an account")
+                        .font(.body)
+                }
+            }
+        }
+        .padding()
+    }
+}
+
+struct WelcomeView_Previews: PreviewProvider {
+    static var previews: some View {
+        WelcomeView(interfaceState: .constant(.welcome))
+    }
+}
