@@ -2,12 +2,33 @@ import SwiftUI
 
 struct AuthorisedContentView: View {
     @ObservedObject var contentService: ContentService
+    @SceneStorage("navigationSelection") private var navigationSelection: Navigation = .primary
+    #if os(iOS)
+    @Environment(\.horizontalSizeClass) private var horizontalSizeClass
+    private var isCompact: Bool {
+        horizontalSizeClass == .compact
+    }
+    #else
+    private var isCompact = false
+    #endif
+    
     init(userProfile: UserProfile) {
         self.contentService = ContentService(contentRepository: InMemoryContentRepository(userID: userProfile.id))
     }
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        if #available(iOS 16.0, *), !isCompact {
+            SidebarNavigationView(navigationSelection: $navigationSelection)
+                .onAppear {
+                    navigationSelection = .primary
+                }
+        } else {
+            TabbarNavigationView(navigationSelection: $navigationSelection)
+                .onAppear {
+                    navigationSelection = .primary
+                }
+        }
+        
     }
 }
 

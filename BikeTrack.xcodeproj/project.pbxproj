@@ -32,6 +32,11 @@
 		A1A3654D2A9888D300C929C1 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A3654C2A9888D300C929C1 /* SignUpView.swift */; };
 		A1A3654F2A98901C00C929C1 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A3654E2A98901C00C929C1 /* LogoView.swift */; };
 		A1A365512A989AE100C929C1 /* CredentialFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A365502A989AE100C929C1 /* CredentialFormView.swift */; };
+		A1A365532A98BE1700C929C1 /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A365522A98BE1700C929C1 /* Navigation.swift */; };
+		A1A365552A98BEAB00C929C1 /* BikeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A365542A98BEAB00C929C1 /* BikeListView.swift */; };
+		A1A365572A98BECC00C929C1 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A365562A98BECC00C929C1 /* AccountView.swift */; };
+		A1A365592A98C07700C929C1 /* TabbarNavigationVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A365582A98C07700C929C1 /* TabbarNavigationVIew.swift */; };
+		A1A3655B2A98C16F00C929C1 /* SidebarNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A3655A2A98C16F00C929C1 /* SidebarNavigationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +86,11 @@
 		A1A3654C2A9888D300C929C1 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		A1A3654E2A98901C00C929C1 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		A1A365502A989AE100C929C1 /* CredentialFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialFormView.swift; sourceTree = "<group>"; };
+		A1A365522A98BE1700C929C1 /* Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
+		A1A365542A98BEAB00C929C1 /* BikeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeListView.swift; sourceTree = "<group>"; };
+		A1A365562A98BECC00C929C1 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		A1A365582A98C07700C929C1 /* TabbarNavigationVIew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarNavigationVIew.swift; sourceTree = "<group>"; };
+		A1A3655A2A98C16F00C929C1 /* SidebarNavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidebarNavigationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +144,7 @@
 				A1A364FE2A9845A500C929C1 /* BikeTrackApp.swift */,
 				A1A3652D2A9847F800C929C1 /* UserService.swift */,
 				A1A365382A984E2100C929C1 /* ContentService.swift */,
+				A1A365522A98BE1700C929C1 /* Navigation.swift */,
 				A1A365332A98495000C929C1 /* Model */,
 				A1A3652A2A9845F400C929C1 /* AuthRepository */,
 				A1A3653A2A984EB900C929C1 /* ContentRepository */,
@@ -180,6 +191,10 @@
 				A1A365002A9845A500C929C1 /* ContentView.swift */,
 				A1A365472A98888C00C929C1 /* Onboarding */,
 				A1A365362A984DD200C929C1 /* AuthorisedContentView.swift */,
+				A1A3655A2A98C16F00C929C1 /* SidebarNavigationView.swift */,
+				A1A365582A98C07700C929C1 /* TabbarNavigationVIew.swift */,
+				A1A365542A98BEAB00C929C1 /* BikeListView.swift */,
+				A1A365562A98BECC00C929C1 /* AccountView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -357,15 +372,20 @@
 				A1A3652E2A9847F800C929C1 /* UserService.swift in Sources */,
 				A1A365392A984E2100C929C1 /* ContentService.swift in Sources */,
 				A1A365492A9888BD00C929C1 /* WelcomeView.swift in Sources */,
+				A1A365592A98C07700C929C1 /* TabbarNavigationVIew.swift in Sources */,
 				A1A365302A98484100C929C1 /* AppEnvironment.swift in Sources */,
 				A1A365012A9845A500C929C1 /* ContentView.swift in Sources */,
 				A1A3654B2A9888CA00C929C1 /* SignInView.swift in Sources */,
+				A1A365552A98BEAB00C929C1 /* BikeListView.swift in Sources */,
+				A1A365572A98BECC00C929C1 /* AccountView.swift in Sources */,
 				A1A3654F2A98901C00C929C1 /* LogoView.swift in Sources */,
 				A1A3653C2A984EDC00C929C1 /* ContentRepository.swift in Sources */,
+				A1A365532A98BE1700C929C1 /* Navigation.swift in Sources */,
 				A1A365512A989AE100C929C1 /* CredentialFormView.swift in Sources */,
 				A1A365372A984DD200C929C1 /* AuthorisedContentView.swift in Sources */,
 				A1A365462A9863F600C929C1 /* UserService+Preview.swift in Sources */,
 				A1A365322A9848AC00C929C1 /* AuthRepository.swift in Sources */,
+				A1A3655B2A98C16F00C929C1 /* SidebarNavigationView.swift in Sources */,
 				A1A365402A98551B00C929C1 /* ContentService+Preview.swift in Sources */,
 				A1A364FF2A9845A500C929C1 /* BikeTrackApp.swift in Sources */,
 				A1A365422A98554300C929C1 /* Model+Preview.swift in Sources */,

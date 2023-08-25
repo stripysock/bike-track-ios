@@ -65,7 +65,9 @@ struct SignInView: View {
                         .frame(minWidth: 250)
                 }
                 .buttonStyle(.borderedProminent)
+                #if os(iOS)
                 .buttonBorderShape(.capsule)
+                #endif
                 .disabled(!fieldsAreEnabled)
                 
                 if let returnAction = returnAction {

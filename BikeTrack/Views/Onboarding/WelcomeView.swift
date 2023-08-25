@@ -23,7 +23,9 @@ struct WelcomeView: View {
                         .frame(minWidth: 250)
                 }
                 .buttonStyle(.borderedProminent)
+                #if os(iOS)
                 .buttonBorderShape(.capsule)
+                #endif
                 
                 Button {
                     interfaceState = .signIn

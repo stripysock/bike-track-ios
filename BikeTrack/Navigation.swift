@@ -1,0 +1,44 @@
+import SwiftUI
+
+enum Navigation: String, Hashable, CaseIterable, Identifiable, Codable {
+    case list
+    case account
+    
+    static var primary: Navigation {
+        .list
+    }
+    
+    var id: String {
+        rawValue
+    }
+    
+    @ViewBuilder func view() -> some View {
+        switch self {
+        case .list:
+            BikeListView()
+                .navigationTitle(self.title)
+
+        case .account:
+            AccountView()
+                .navigationTitle(self.title)
+        }
+    }
+    
+    var title: String {
+        switch self {
+        case .list:
+            return "Bikes"
+        case .account:
+            return "My Account"
+        }
+    }
+    
+    func image() -> Image {
+        switch self {
+        case .list:
+            return Image(systemName: "bicycle.circle")
+        case .account:
+            return Image(systemName: "person.circle")
+        }
+    }
+}
