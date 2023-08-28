@@ -3,7 +3,7 @@ import SwiftUI
 struct BikeListView: View {
     @EnvironmentObject var contentService: ContentService
     
-    @State private var bikesState: Loadable<Bike> = .loading
+    @State private var bikesState: LoadState<Bike> = .loading
     
     var body: some View {
         ZStack {

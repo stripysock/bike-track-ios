@@ -1,6 +1,11 @@
 import Foundation
 
-enum Loadable<T: Hashable & Identifiable> {
+typealias Loadable = Hashable & Identifiable
+
+/**
+ `LoadState` gives us a way of communicating the current load state of an array of ``Loadable`` items.
+ */
+enum LoadState<T: Loadable> {
     case loading
     case empty
     case loaded([T])
