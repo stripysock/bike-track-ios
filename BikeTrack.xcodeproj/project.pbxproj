@@ -37,6 +37,7 @@
 		A1A365572A98BECC00C929C1 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A365562A98BECC00C929C1 /* AccountView.swift */; };
 		A1A365592A98C07700C929C1 /* TabbarNavigationVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A365582A98C07700C929C1 /* TabbarNavigationVIew.swift */; };
 		A1A3655B2A98C16F00C929C1 /* SidebarNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A3655A2A98C16F00C929C1 /* SidebarNavigationView.swift */; };
+		A1A3655E2A9C264300C929C1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A1A3655D2A9C264300C929C1 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,7 +92,7 @@
 		A1A365562A98BECC00C929C1 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		A1A365582A98C07700C929C1 /* TabbarNavigationVIew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarNavigationVIew.swift; sourceTree = "<group>"; };
 		A1A3655A2A98C16F00C929C1 /* SidebarNavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidebarNavigationView.swift; sourceTree = "<group>"; };
-		A1A3655C2A9C0DAA00C929C1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A1A3655D2A9C264300C929C1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +123,7 @@
 		A1A364F22A9845A500C929C1 = {
 			isa = PBXGroup;
 			children = (
+				A1A3655D2A9C264300C929C1 /* README.md */,
 				A1A364FD2A9845A500C929C1 /* BikeTrack */,
 				A1A3650F2A9845A600C929C1 /* BikeTrackTests */,
 				A1A365192A9845A600C929C1 /* BikeTrackUITests */,
@@ -142,7 +144,6 @@
 		A1A364FD2A9845A500C929C1 /* BikeTrack */ = {
 			isa = PBXGroup;
 			children = (
-				A1A3655C2A9C0DAA00C929C1 /* README.md */,
 				A1A364FE2A9845A500C929C1 /* BikeTrackApp.swift */,
 				A1A3652D2A9847F800C929C1 /* UserService.swift */,
 				A1A365382A984E2100C929C1 /* ContentService.swift */,
@@ -344,6 +345,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1A3655E2A9C264300C929C1 /* README.md in Resources */,
 				A1A365072A9845A600C929C1 /* Preview Assets.xcassets in Resources */,
 				A1A365032A9845A600C929C1 /* Assets.xcassets in Resources */,
 			);
