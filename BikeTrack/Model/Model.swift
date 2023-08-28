@@ -1,5 +1,11 @@
 import Foundation
 
+enum Loadable<T: Hashable, Identifiable> {
+    case loading
+    case empty
+    case loaded([T])
+}
+
 struct UserProfile: Identifiable, Hashable, Codable {
     /// A unique identifier for the user
     var id: UUID

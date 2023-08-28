@@ -73,7 +73,7 @@ struct SignInView: View {
 ```
 
 ### Everything else
-Services should contain more complex logic that may be used by more than one type of view and containing more than one type of model. For example, returning a list of groups related to a particular user.
+Services should contain more complex logic that may be used by more than one type of view and containing more than one type of model. For example, returning a list of groups related to a particular user. Note that in this case we recommend using the `Loadable` wrapper to better indicate that loading state of the result.
 
 
 
