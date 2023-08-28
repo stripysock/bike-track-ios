@@ -16,7 +16,7 @@ struct SignInView: View {
     @State private var interfaceState: InterfaceState = .idle
     
     private var submitIsEnabled: Bool {
-        !emailAddress.isEmpty && !password.isEmpty
+        fieldsAreEnabled && !emailAddress.isEmpty && !password.isEmpty
     }
     
     private var fieldsAreEnabled: Bool {
@@ -65,10 +65,11 @@ struct SignInView: View {
                         .frame(minWidth: 250)
                 }
                 .buttonStyle(.borderedProminent)
+                .accessibilityLabel("Sign In")
                 #if os(iOS)
                 .buttonBorderShape(.capsule)
                 #endif
-                .disabled(!fieldsAreEnabled)
+                .disabled(!submitIsEnabled)
                 
                 if let returnAction = returnAction {
                     Button {

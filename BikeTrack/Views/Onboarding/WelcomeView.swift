@@ -23,6 +23,7 @@ struct WelcomeView: View {
                         .frame(minWidth: 250)
                 }
                 .buttonStyle(.borderedProminent)
+                .accessibilityLabel("Create Account")
                 #if os(iOS)
                 .buttonBorderShape(.capsule)
                 #endif
@@ -33,6 +34,7 @@ struct WelcomeView: View {
                     Text("I already have an account")
                         .font(.body)
                 }
+                .accessibilityLabel("Sign In To Account")
             }
         }
         .padding()
