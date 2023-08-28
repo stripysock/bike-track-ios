@@ -75,5 +75,9 @@ struct SignInView: View {
 ### Everything else
 Services should contain more complex logic that may be used by more than one type of view and containing more than one type of model. For example, returning a list of groups related to a particular user. Note that in this case we recommend using the `Loadable` wrapper to better indicate that loading state of the result.
 
+## Testing
+TODO: Add tests.
 
+Yes, one of the obvious problems with having logic within the views means this particular logic can't be tested directly. 
+Personally I think simplicity rules surpreme, but if you don't agree, check out the (ViewInspector)[https://github.com/nalexn/ViewInspector] SPM for running logic tests on SwiftUI views.
 
