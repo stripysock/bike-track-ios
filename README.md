@@ -77,6 +77,6 @@ Services should contain more complex logic that may be used by more than one typ
 
 ## Testing
 One of the obvious problems with having logic within the views means this particular logic can't be tested directly through unit tests. 
-Personally I think simplicity rules surpreme, but if you don't agree, check out the (ViewInspector)[https://github.com/nalexn/ViewInspector] SPM for running logic tests on SwiftUI views.
+Personally I think simplicity rules surpreme, but if you don't agree, check out the [ViewInspector](https://github.com/nalexn/ViewInspector) SPM for running logic tests on SwiftUI views.
 **However**, as mentioned above, our logic within views should be purely for the view itself. As such, it's probably better to use UI Tests to test this logic.
 
