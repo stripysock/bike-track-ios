@@ -22,11 +22,13 @@ struct AuthorisedContentView: View {
                 .onAppear {
                     navigationSelection = .primary
                 }
+                .environmentObject(contentService)
         } else {
             TabbarNavigationView(navigationSelection: $navigationSelection)
                 .onAppear {
                     navigationSelection = .primary
                 }
+                .environmentObject(contentService)
         }
         
     }

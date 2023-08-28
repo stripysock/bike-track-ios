@@ -1,9 +1,10 @@
 import Foundation
 
-enum Loadable<T: Hashable, Identifiable> {
+enum Loadable<T: Hashable & Identifiable> {
     case loading
     case empty
     case loaded([T])
+    case loadFailed(Error)
 }
 
 struct UserProfile: Identifiable, Hashable, Codable {

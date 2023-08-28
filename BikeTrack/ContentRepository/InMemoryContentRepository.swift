@@ -16,8 +16,9 @@ class InMemoryContentRepository: ContentRepository {
         self.userID = userID
     }
     
-    func getBikes(userID: UUID) async throws -> [Bike] {
-        bikeDatabase.filter { $0.userID == userID }
+    func getBikes(userID: UUID?) async throws -> [Bike] {
+        let comparison = userID ?? self.userID
+        return bikeDatabase.filter { $0.userID == comparison }
     }
     
     func updateBike(_ bike: Bike) async throws {

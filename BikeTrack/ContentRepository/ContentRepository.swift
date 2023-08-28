@@ -29,11 +29,11 @@ protocol ContentRepository {
      Retrieves a list of bikes for a given user.
      
      - Parameters:
-        - userID: The UUID of the user whose bikes we're interested in viewing
+        - userID: Optional - The UUID of the user whose bikes we're interested in viewing. If nil, the current user's bikes will be returned.
      
      - Throws: A ``ContentError`` will be thrown if the user doesn't exist. A system error may be thrown if there's a problem with the request.
      */
-    func getBikes(userID: UUID) async throws -> [Bike]
+    func getBikes(userID: UUID?) async throws -> [Bike]
        
     /**
      Updates a bike if it already exists, otherwise write a new entry.
@@ -45,4 +45,15 @@ protocol ContentRepository {
      */
     func updateBike(_ bike: Bike) async throws
   
+}
+
+extension ContentRepository {
+    /**
+     Retrieves a list of bikes for the current user.
+     
+     - Throws: A ``ContentError`` will be thrown if the user doesn't exist. A system error may be thrown if there's a problem with the request.
+     */
+    func getBikes() async throws -> [Bike] {
+        return try await getBikes(userID: nil)
+    }
 }

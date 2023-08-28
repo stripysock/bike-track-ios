@@ -23,4 +23,15 @@ class ContentService: ObservableObject {
         self.contentRepository = contentRepository
     }
     
+    func bikesForCurrentUser() async -> Loadable<Bike> {
+        do {
+            let bikes = try await contentRepository.getBikes(userID: nil)
+            if bikes.isEmpty {
+                return .empty
+            }
+            return .loaded(bikes)
+        } catch {
+            return .loadFailed(error)
+        }
+    }
 }
