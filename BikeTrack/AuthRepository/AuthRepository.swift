@@ -1,5 +1,4 @@
 import Foundation
-import Combine
 
 enum AuthError: LocalizedError, Equatable {
     case userNotFound(String)
@@ -49,10 +48,10 @@ enum AuthState: Equatable {
 
 protocol AuthRepository {
     /**
-     The current auth state is a current value subject that can be observed by any parts of the app
+     The current auth state is a current value sequencet that can be observed by any parts of the app
      that need to change in response to whether a user is signed in or not.
      */
-    var authState: CurrentValueSubject<AuthState, Never> { get }
+    var authState: CurrentValueAsyncSequence<AuthState> { get }
 
     /**
      Initiate a sign in with the username and password that has been provided.

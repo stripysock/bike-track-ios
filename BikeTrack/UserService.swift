@@ -1,6 +1,5 @@
 import Foundation
 import os.log
-import Combine
 
 /**
  `UserService` provides an interface into common user account management functions.
@@ -15,27 +14,30 @@ class UserService: ObservableObject {
     )
     
     private var authRepository: AuthRepository
-    private var cancellables = Set<AnyCancellable>()
-
-    @Published private (set) var authState: AuthState = .unknown
+    private var authObserver: Task<Void, Never>?
+    
+    @Published private(set) var authState: AuthState = .unknown {
+        didSet {
+            #if DEBUG
+            print("published authState changed to:", authState)
+            #endif
+        }
+    }
     
     init(authRepository: AuthRepository) {
         self.authRepository = authRepository
-        
         setupObservers()
     }
     
+    deinit {
+        authObserver?.cancel()
+        authObserver = nil
+    }
+    
     private func setupObservers() {
-        authRepository.authState
-            .receive(on: DispatchQueue.main)
-            .sink { [weak self] authState in
-                guard let sself = self else {
-                    return
-                }
-                sself.authState = authState
-            }
-            .store(in: &cancellables)
-            
+        self.authObserver = authRepository.authState.observeOnMain { [weak self] newAuthState in
+            self?.authState = newAuthState
+        }
     }
     
     /**

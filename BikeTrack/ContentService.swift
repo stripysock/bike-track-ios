@@ -1,6 +1,5 @@
 import Foundation
 import os.log
-import Combine
 
 /**
  `ContentService` provides an interface into storing and retrieving user content.
@@ -15,7 +14,6 @@ class ContentService: ObservableObject {
     )
     
     private var contentRepository: ContentRepository
-    private var cancellables = Set<AnyCancellable>()
 
     @Published private (set) var signInState: AuthState = .unknown
     
