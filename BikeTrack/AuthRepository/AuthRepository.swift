@@ -48,7 +48,7 @@ enum AuthState: Equatable {
 
 protocol AuthRepository {
     /**
-     The current auth state is a current value sequencet that can be observed by any parts of the app
+     The auth state is a current value sequence that can be observed by any parts of the app
      that need to change in response to whether a user is signed in or not.
      */
     var authState: CurrentValueAsyncSequence<AuthState> { get }

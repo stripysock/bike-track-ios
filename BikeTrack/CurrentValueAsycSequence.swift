@@ -11,30 +11,32 @@ import Foundation
  A `AsyncSequence` based replacement for `CurrentValueSubject` publisher from the
  `Combine` framework.
  */
-public final class CurrentValueAsyncSequence<T>: AsyncSequence {
+public final class CurrentValueAsyncSequence<T>: AsyncSequence where T: Sendable {
     public typealias Element = T
-
+    
     private var currentValue: T
     /// current 'subscribers' listening for new values in the sequence
     private var listeners: [(T) -> Void] = []
-
+    
     public init(_ initialValue: T) {
         self.currentValue = initialValue
     }
-
+    
     public func makeAsyncIterator() -> AsyncStream<T>.Iterator {
-        let x = AsyncStream<T> { continuation in
+        let x = AsyncStream<T> { [weak self] continuation in
+            guard let self else { return }
             // Subscribe to changes
             self.listeners.append { newValue in
                 continuation.yield(newValue)
             }
-
+            
             // Send the initial value
             continuation.yield(self.currentValue)
+            
         }.makeAsyncIterator()
         return x
     }
-
+    
     /// updates the current value and sends to listeners watching
     /// for changes in the sequence
     public func send(_ newValue: T) {
