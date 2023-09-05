@@ -1,8 +1,7 @@
 import Foundation
-import Combine
 import OSLog
 
-class MockAuthRepository: AuthRepository {
+actor MockAuthRepository: AuthRepository {
     private static let logger = Logger(
         subsystem: Bundle.main.bundleIdentifier ?? AppEnvironment.defaultBundleID,
         category: String(describing: MockAuthRepository.self)
@@ -10,7 +9,7 @@ class MockAuthRepository: AuthRepository {
     
     private var userDatabase: [MockUser] = []
     
-    var authState: CurrentValueSubject<AuthState, Never>  = .init(.unknown)
+    let authState: CurrentValueAsyncSequence<AuthState> = CurrentValueAsyncSequence(.unknown)
     
     init() {
 #if !DEBUG

@@ -1,6 +1,7 @@
 import XCTest
 @testable import BikeTrack
 
+@MainActor  // Isolate test class to MainActor
 final class BikeTrackTests: XCTestCase {
     let mockUserService = UserService(authRepository: MockAuthRepository())
     

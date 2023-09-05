@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63A419252A9F52A400F63F68 /* CurrentValueAsycSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A419242A9F52A400F63F68 /* CurrentValueAsycSequence.swift */; };
 		A1A364FF2A9845A500C929C1 /* BikeTrackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A364FE2A9845A500C929C1 /* BikeTrackApp.swift */; };
 		A1A365012A9845A500C929C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A365002A9845A500C929C1 /* ContentView.swift */; };
 		A1A365032A9845A600C929C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1A365022A9845A600C929C1 /* Assets.xcassets */; };
@@ -58,6 +59,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		63A419242A9F52A400F63F68 /* CurrentValueAsycSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentValueAsycSequence.swift; sourceTree = "<group>"; };
 		A1A364FB2A9845A500C929C1 /* BikeTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BikeTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1A364FE2A9845A500C929C1 /* BikeTrackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeTrackApp.swift; sourceTree = "<group>"; };
 		A1A365002A9845A500C929C1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				A1A3652D2A9847F800C929C1 /* UserService.swift */,
 				A1A365382A984E2100C929C1 /* ContentService.swift */,
 				A1A365522A98BE1700C929C1 /* Navigation.swift */,
+				63A419242A9F52A400F63F68 /* CurrentValueAsycSequence.swift */,
 				A1A365332A98495000C929C1 /* Model */,
 				A1A3652A2A9845F400C929C1 /* AuthRepository */,
 				A1A3653A2A984EB900C929C1 /* ContentRepository */,
@@ -386,6 +389,7 @@
 				A1A3653C2A984EDC00C929C1 /* ContentRepository.swift in Sources */,
 				A1A365532A98BE1700C929C1 /* Navigation.swift in Sources */,
 				A1A365512A989AE100C929C1 /* CredentialFormView.swift in Sources */,
+				63A419252A9F52A400F63F68 /* CurrentValueAsycSequence.swift in Sources */,
 				A1A365372A984DD200C929C1 /* AuthorisedContentView.swift in Sources */,
 				A1A365462A9863F600C929C1 /* UserService+Preview.swift in Sources */,
 				A1A365322A9848AC00C929C1 /* AuthRepository.swift in Sources */,

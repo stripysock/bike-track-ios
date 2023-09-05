@@ -1,8 +1,7 @@
 import Foundation
-import Combine
 import OSLog
 
-class InMemoryContentRepository: ContentRepository {
+actor InMemoryContentRepository: ContentRepository {
     
     private static let logger = Logger(
         subsystem: Bundle.main.bundleIdentifier ?? AppEnvironment.defaultBundleID,
