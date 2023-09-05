@@ -19,9 +19,7 @@ class UserService: ObservableObject {
     
     @Published private(set) var authState: AuthState = .unknown {
         didSet {
-            #if DEBUG
-            print("published authState changed to:", authState)
-            #endif
+            Self.logger.info("published authState changed to: \(self.authState)")
         }
     }
     

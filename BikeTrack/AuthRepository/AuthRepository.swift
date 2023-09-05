@@ -46,6 +46,23 @@ enum AuthState: Equatable {
     case signedIn(profile: UserProfile)
 }
 
+extension AuthState: CustomStringConvertible {
+    /// Implementing CustomStringConvertible to ensure that profile details
+    /// are not leaked if logging current state.
+    var description: String {
+        switch self {
+        case .unknown:
+            return "unknown"
+        case .loading:
+            return "loading"
+        case .signedOut:
+            return "signedOut"
+        case .signedIn:
+            return "signedIn"
+        }
+    }
+}
+
 protocol AuthRepository {
     /**
      The auth state is a current value sequence that can be observed by any parts of the app
